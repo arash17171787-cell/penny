@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penny — PLM-to-Costing Bridge</title>
+  <meta name="description" content="Automated PLM tech pack to costing engine bridge for fashion and garment industry.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css?v=4">
+  <link rel="stylesheet" href="css/layout.css?v=4">
+  <link rel="stylesheet" href="css/components.css?v=4">
+  <link rel="stylesheet" href="css/animations.css?v=4">
+</head>
+<body>
+  <!-- App Shell -->
+  <div class="app-shell">
+    <!-- Sidebar (built by app.js) -->
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <!-- Main Content (top nav + pages + footer built by app.js) -->
+    <main class="main-content">
+      <!-- Dashboard (Styles exploration: 3 cost cards) -->
+      <div class="page-container" id="page-dashboard"></div>
+
+      <!-- Styles / Costing Engine (BOM Mapping) -->
+      <div class="page-container" id="page-costing-engine"></div>
+
+      <!-- Cost Summary (Tab within Styles) -->
+      <div class="page-container" id="page-cost-summary"></div>
+
+      <!-- Material Library -->
+      <div class="page-container" id="page-material-library"></div>
+
+      <!-- Simulations / Tech Pack Upload -->
+      <div class="page-container" id="page-techpack-upload"></div>
+
+      <!-- Style Templates / Settings -->
+      <div class="page-container" id="page-style-templates"></div>
+
+      <!-- Reports / Analytics -->
+      <div class="page-container" id="page-analytics"></div>
+
+      <!-- Supplier Portal (if needed) -->
+      <div class="page-container" id="page-supplier-portal"></div>
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts: Data Layer -->
+  <script src="js/data/material-library.js?v=4"></script>
+  <script src="js/data/style-templates.js?v=4"></script>
+  <script src="js/data/historical-data.js?v=4"></script>
+  <script src="js/data/sample-techpacks.js?v=4"></script>
+
+  <!-- Scripts: Services -->
+  <script src="js/services/costing-service.js?v=4"></script>
+  <script src="js/services/ocr-service.js?v=4"></script>
+  <script src="js/services/ml-service.js?v=4"></script>
+  <script src="js/services/yield-service.js?v=4"></script>
+  <script src="js/services/plm-sync.js?v=4"></script>
+
+  <!-- Scripts: Store -->
+  <script src="js/store.js?v=4"></script>
+
+  <!-- Scripts: Pages -->
+  <script src="js/pages/dashboard.js?v=4"></script>
+  <script src="js/pages/techpack-upload.js?v=4"></script>
+  <script src="js/pages/costing-engine.js?v=4"></script>
+  <script src="js/pages/cost-summary.js?v=4"></script>
+  <script src="js/pages/material-library.js?v=4"></script>
+  <script src="js/pages/style-templates.js?v=4"></script>
+  <script src="js/pages/supplier-portal.js?v=4"></script>
+  <script src="js/pages/analytics.js?v=4"></script>
+
+  <!-- Scripts: App Controller (must be last) -->
+  <script src="js/app.js?v=4"></script>
+</body>
+</html>
